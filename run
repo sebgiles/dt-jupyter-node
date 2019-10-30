@@ -1,4 +1,5 @@
 #!/bin/bash
 NAME=${PWD##*/}
-
+#addjust the environment variables
+#by default jupyter will load notebooks from your home directory
 docker run -d --rm --net host -v ~/:/notebooks -e VEHICLE_NAME="theducknight" -e ROS_IP="109.202.221.9" -e ROS_MASTER_URI="http://109.202.221.93:11311/" --name dt-jupyter-node duckietown/dt-$NAME:v1-amd64
