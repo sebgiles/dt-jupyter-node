@@ -1,4 +1,4 @@
-`git clone` this repo to a folder named 'jupyter-node'
+`git clone` this repo
 
 `cd` into it
 
